@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/FAQ"
+            android:icon="@drawable/ic_user"
+            android:title="FAQ" />
+
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/privacypolicy"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="Privacy Policy" />
+
+        <item
+            android:id="@+id/moreapps"
+            android:icon="@drawable/ic_baseline_apps_24"
+            android:title="More Apps" />
+
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/ic_baseline_star_border_24"
+            android:title="Rate Us" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+</menu>

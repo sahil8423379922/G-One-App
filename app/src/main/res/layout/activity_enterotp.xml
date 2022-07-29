@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".enterotp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="#EEF3FA">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="G-One"
+            android:textAlignment="center"
+            android:textColor="#054677"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#080808"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:text="A Smart life Care Support"/>
+    </LinearLayout>
+
+
+
+
+
+    <EditText
+        android:id="@+id/enterotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="50dp"
+        android:hint="Enter OTP"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:inputType="number"
+        android:textColor="#011022"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/okbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:background="@drawable/ok_button_design"
+        android:text="@string/Enterotp"
+        android:textAllCaps="false"
+        android:textColor="#1E1E1E"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/edittextResendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:text="@string/time_remain"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/otpresendbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_otp"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

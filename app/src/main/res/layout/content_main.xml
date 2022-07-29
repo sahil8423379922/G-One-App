@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3FFFE"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/vaccination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/ic_vaccine" />
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:layout_weight="7">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:textColor="#0A587B"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Vaccination"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Protect Yourself by Vaccination"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/sensitive_areas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:textColor="#0A587B"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/ic_group" />
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:layout_weight="7">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:textColor="#0A587B"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Sensitive Areas"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Check Active Cases Near You"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bed_availability_btn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/bed_availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/ic_hospital_bed" />
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:layout_weight="7">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:textColor="#0A587B"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Bed Availability"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Bed availabilty in nearest Hospitals"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/oxygen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/ic_oxygen_tank" />
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:layout_weight="7">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:textColor="#0A587B"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Oxygen Availability"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Available Oxygen Cylinder"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="4dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/ic_vitamin" />
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:layout_weight="7">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:textColor="#0A587B"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Pharmacy"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Get Medicine at Your Place"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:src="@drawable/ic_doctor" />
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:layout_weight="7">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:textColor="#0A587B"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Doctor Advice"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:text="Consult with Doctor Online"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>
